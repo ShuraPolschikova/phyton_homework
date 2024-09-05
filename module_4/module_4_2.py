@@ -7,4 +7,5 @@ def test_function():
 
 test_function()
 
+
 # inner_function() NameError: name 'inner_function' is not defined'?
