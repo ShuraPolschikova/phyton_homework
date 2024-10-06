@@ -1,13 +1,16 @@
 class Horse:
-    x_distance = 0
-    sound1 = 'Frrr'
+    def __init__(self):
+        self.x_distance = 0
+        self.sound1 = 'Frrr'
 
     def run(self, dx):
         self.x_distance = self.x_distance+dx
 
 class Eagle:
-    y_distance = 0
-    sound2 = 'I train, eat, sleep, and repeat'
+    def __init__(self):
+        self.y_distance = 0
+        self.sound2 = 'I train, eat, sleep, and repeat'
+
     def fly(self, dy):
         self.y_distance = self.y_distance+dy
 
