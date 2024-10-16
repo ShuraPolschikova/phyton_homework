@@ -1,7 +1,7 @@
 import os
 import time
 
-directory = r"C:\Users\ABaskakova\Desktop\URBAN\Project pycharm\python_homework\module_7"
+directory = r"."
 
 for root, dirs, files in os.walk(directory):
     for file in files:
