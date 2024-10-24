@@ -25,6 +25,6 @@ def sum_three(a, b, c):
     return a+b+c
 
 
-result = sum_three(1, 1, 1)
+result = sum_three(2, 3, 6)
 print(result)
 
