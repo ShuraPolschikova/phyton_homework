@@ -1,5 +1,5 @@
 import time
-from multiprocessing import Pool
+import multiprocessing
 
 
 def read_info(name):
@@ -22,8 +22,17 @@ if __name__ == "__main__":
     print(f"{end_time_linear_call-start_time_linear_call:6f} (линейный)")
 
     start_time_multi_call = time.time()
-    with Pool() as pool:
-        pool.map(read_info, file_names)
+    if __name__ == "__main__":
+        file_names = [f'./file {number}.txt' for number in range(1, 5)]
+        processes = []
+        for file_name in file_names:
+            proc = multiprocessing.Process(target=read_info, args=(file_name,))
+            processes.append(proc)
+            proc.start()
+
+        for proc in processes:
+            proc.join()
+
     end_time_multi_call = time.time()
     print(f"{end_time_multi_call-start_time_multi_call:6f} (многопроцессорный)")
 
