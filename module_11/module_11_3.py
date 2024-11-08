@@ -1,8 +1,9 @@
 def introspection_info(obj):
     obj_type = type(obj)
-    obj_attr = dir(obj)
-    obj_module = obj.__module__
-    obj_methods = [met for met in obj_attr if callable(getattr(obj, met))]
+    obj_dir = dir(obj)
+    obj_attr = [attr for attr in obj_dir if not callable(getattr(obj, attr))]
+    obj_module = obj.__class__.__module__
+    obj_methods = [met for met in obj_dir if callable(getattr(obj, met))]
     obj_id = id(obj)
 
 
