@@ -6,6 +6,7 @@ with Image.open("mops.jpg") as im:
     draw.line((0, im.size[1]/2, im.size[0]/2, 0), fill=128)
     draw.line((0, im.size[1], im.size[0], 0), fill=128)
     draw.line((0, im.size[1]*3/4, im.size[0]*3/4, 0), fill=128)
+
     im.show()
 
 
