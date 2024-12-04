@@ -40,11 +40,13 @@ class Tournament:
         return finishers
 
 class TournamentTest(unittest.TestCase):
+    is_frozen = True
 
     @classmethod
     def setUpClass(cls):
         cls.all_results = {}
 
+    @unittest.skipIf(True, "Тесты в этом кейсе заморожены")
     def setUp(self):
         self.runner1 = Runner("Усэйн", 10)
         self.runner2 = Runner("Андрей", 9)

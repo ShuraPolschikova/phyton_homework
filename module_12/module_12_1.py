@@ -3,6 +3,8 @@ import module_12_1_shablon as m12
 
 
 class RunnerTest(unittest.TestCase):
+    is_frozen = False
+    @unittest.skipIf(False,"Тесты в этом кейсе заморожены")
     def test_walk(self):
         runner = m12.Runner("Runner1")
         for i in range(10):
