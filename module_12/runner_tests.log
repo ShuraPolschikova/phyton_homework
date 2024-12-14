@@ -1,0 +1,18 @@
+2024-12-15 01:46:27,420:| WARNING: | Ошибка параметров Runner: Скорость не может быть <0
+2024-12-15 01:46:27,421:| ERROR: | А вот и подробности ошибки
+Traceback (most recent call last):
+  File "C:\Users\ABaskakova\Desktop\URBAN\Project pycharm\python_homework\module_12\module_12_4.py", line 84, in <module>
+    first = Runner('Вося', -10)
+  File "C:\Users\ABaskakova\Desktop\URBAN\Project pycharm\python_homework\module_12\module_12_4.py", line 12, in __init__
+    raise ValueError("Скорость не может быть <0")
+ValueError: Скорость не может быть <0
+2024-12-15 01:46:27,421:| WARNING: | Ошибка параметров Runner: Имя бегуна введено неверно
+2024-12-15 01:46:27,421:| ERROR: | А вот и подробности ошибки
+Traceback (most recent call last):
+  File "C:\Users\ABaskakova\Desktop\URBAN\Project pycharm\python_homework\module_12\module_12_4.py", line 91, in <module>
+    third = Runner(43535, 10)
+  File "C:\Users\ABaskakova\Desktop\URBAN\Project pycharm\python_homework\module_12\module_12_4.py", line 14, in __init__
+    raise TypeError("Имя бегуна введено неверно")
+TypeError: Имя бегуна введено неверно
+2024-12-15 01:46:27,425:| INFO: | "test_run" выполнен успешно
+2024-12-15 01:46:27,425:| INFO: | "test_walk" выполнен успешно
