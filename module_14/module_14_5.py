@@ -8,7 +8,7 @@ import asyncio
 from crud_functions import initiate_products_db, initiate_users_db, get_all_products, is_included, add_user
 import os
 
-api = "7875632174:AAF5pCRSRAeM0slfd9Nyiw9lHIhaLWnnB6I"
+api = ""
 bot = Bot(token=api)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
