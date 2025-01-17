@@ -19,5 +19,5 @@ async def get_id(user_id: int):
 
 
 @app.get("/users/{username}/{age}")
-async def inf(username: str, age: int):
+async def get_info(username: str, age: int):
     return f"Информация о пользователе. Имя: {username}, Возраст: {age}"
